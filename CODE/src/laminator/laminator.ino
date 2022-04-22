@@ -42,6 +42,6 @@ void loop(){
 
 	if(bounceCount > 10 && (abs(setTemp - ntc.getTemperatureC()) <= tDelta)) digitalWrite(readyLedPin, 1);
 	else{
-		digitalWrite(readyLedPin,0);
+		digitalWrite(readyLedPin,0);		
 	}
 }
