@@ -11,7 +11,7 @@ NTC::NTC(double _R0, double _B, double _Rh, double _VCC, int adcPin){
 NTC::~NTC(){}
 
 double NTC::getTemperatureK(){
-	Vr = (5.0000 / 1023.0000)*analogRead(A0); 
+	Vr = (5.0000 / 1023.0000)*analogRead(pin); 
 
 	Rt = Rh / ((VCC/Vr)-1);
 
